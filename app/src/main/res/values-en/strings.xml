@@ -146,4 +146,38 @@
     <string name="TextDonorRoute">Donor route</string>
     <string name="TextOpenGoogleMaps">Open in Google Maps</string>
     <string name="TextPositionSimulation">Simulated location</string>
+
+
+    <string name="rota_available_plural">Available</string>
+    <string name="rota_reserved_plural">Reserved</string>
+    <string name="rota_change_photo">Change photo</string>
+    <string name="rota_logout">Log out</string>
+    <string name="rota_publish_item">Publish item</string>
+    <string name="rota_category_hint">Select a category</string>
+    <string name="rota_condition_hint">Select condition</string>
+    <string name="rota_description_hint">Describe your item, use, brand, size, etc.</string>
+    <string name="rota_area">General area</string>
+    <string name="rota_area_hint">Select an area</string>
+    <string name="TextItemTitle">Item title</string>
+    <string name="rota_title_hint">e.g. Bicycle in good condition</string>
+    <string name="rota_nav_explore">Explore</string>
+    <string name="rota_nav_publish">Publish</string>
+    <string name="rota_nav_messages">Messages</string>
+    <string name="rota_nav_requests">Requests</string>
+    <string name="rota_nav_profile">Profile</string>
+    <string name="TextRemovePhoto">Remove photo</string>
+    <string name="rota_reserved_item">Item reserved.</string>
+    <string name="rota_invalid_title">Enter a title.</string>
+    <string name="rota_invalid_description">Enter a description.</string>
+    <string name="rota_invalid_agreement">Accept the delivery agreement.</string>
+    <string name="rota_add_photo">Add a photo.</string>
+    <string name="rota_description_limit">Maximum 500 characters.</string>
+    <string name="rota_photos_counter">%1$d/3</string>
+    <string name="TextNotAvailable">Feature not available</string>
+    <string name="TextPhotoLimitReached">You can add up to 3 photos.</string>
+    <string name="TextCannotRequestOwnItem">You cannot request your own item.</string>
+    <string name="TextRequestAlreadySent">You have already sent a request for this item.</string>
+    <string name="TextItemUnavailable">This item is no longer available.</string>
+    <string name="TextCompleteRequiredFields">Complete the required fields.</string>
+
 </resources>

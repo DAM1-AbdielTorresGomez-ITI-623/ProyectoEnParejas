@@ -1,5 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="rota_white">#FFFFFFFF</color>
+  <color name="rota_navy">#FF0B1C41</color>
+  <color name="rota_green">#FF14892D</color>
+  <color name="rota_dark_green">#FF087420</color>
+  <color name="rota_text">#FF14213B</color>
+  <color name="rota_gray">#FF71819E</color>
+  <color name="rota_border">#FFE1E6EF</color>
+  <color name="rota_pale">#FFF8F9FB</color>
+  <color name="rota_pale_green">#FFDDF5E3</color>
+  <color name="rota_pale_yellow">#FFFFEBC6</color>
+  <color name="rota_map_background">#FFF1F4F0</color>
+  <color name="rota_red">#FFEB2534</color>
+  <color name="rota_bg_gray">#FFF9FAFC</color>
+  <color name="rota_bubble_gray">#FFF0F1F5</color>
+  <color name="rota_muted_green">#FFBDEBCC</color>
 </resources>

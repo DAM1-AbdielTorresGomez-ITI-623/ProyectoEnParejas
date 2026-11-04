@@ -180,4 +180,27 @@
     <string name="TextItemUnavailable">This item is no longer available.</string>
     <string name="TextCompleteRequiredFields">Complete the required fields.</string>
 
+    <string name="rota_requests_subtitle">Track the progress of every donation.</string>
+    <string name="rota_search_conversation">Search conversation</string>
+    <string name="rota_received">Received</string>
+    <string name="rota_sent">Sent</string>
+    <string name="rota_pending">Pending</string>
+    <string name="rota_accepted">Accepted</string>
+    <string name="rota_preview_title">Receiver preview</string>
+    <string name="rota_preview_subtitle">View the receiver location and approximate distance.</string>
+    <string name="rota_route_title">Route to meeting point</string>
+    <string name="rota_route_subtitle">Follow the route to collect the donated item.</string>
+    <string name="rota_reject_question">Reject request?</string>
+    <string name="rota_reject_message">This request will be rejected.</string>
+    <string name="rota_view_point">View point</string>
+    <string name="TextAgreedPoint">Agreed meeting point</string>
+    <string name="rota_cancel_question">Cancel request?</string>
+    <string name="rota_cancel_message">Your request will be withdrawn.</string>
+    <string name="rota_cancel_confirm">Yes, cancel</string>
+    <string name="TextAcceptRequestQuestion">Accept request?</string>
+    <string name="TextAcceptRequestDescription">This request will be accepted.</string>
+    <string name="TextRequestCancelled">Request canceled</string>
+    <string name="TextMessageRequired">Write a message before sending it.</string>
+    <string name="TextMeetingPointUpdated">Meeting point updated.</string>
+    <string name="TextDeliveryConfirmed">Delivery confirmed successfully.</string>
 </resources>

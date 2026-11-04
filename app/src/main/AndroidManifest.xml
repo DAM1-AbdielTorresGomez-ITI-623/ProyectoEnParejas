@@ -13,6 +13,12 @@
         <activity android:name=".PublishItemActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".MyItemsActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
         <activity android:name=".ProfileActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".RequestsActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".MessagesActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ChatActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".MeetingPointActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".ReceiverPreviewActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".RouteActivity" android:exported="false" android:windowSoftInputMode="adjustResize"/>
     </application>
 
 </manifest>

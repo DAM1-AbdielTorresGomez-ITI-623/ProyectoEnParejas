@@ -1,0 +1,366 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rota_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/profileLogo"
+                android:layout_width="114dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/logo_rota"
+                android:scaleType="fitStart"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="29dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/profileAvatar"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/bg_avatar_circle"
+                    android:src="@drawable/ic_rota_avatar_small"
+                    android:padding="18dp"
+                    android:contentDescription="@null" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/rota_navy"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        tools:text="Abdiel Torres" />
+
+                    <TextView
+                        android:id="@+id/profileHandle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/rota_gray"
+                        android:textSize="13sp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        tools:text="\@abdieltorres" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:src="@drawable/ic_rota_pin"
+                            android:tint="@color/rota_gray"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@+id/profileLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:textColor="@color/rota_gray"
+                            android:textSize="12sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            tools:text="Barranca, Puntarenas" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/actionChangePhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="13dp"
+                        android:paddingStart="23dp"
+                        android:paddingEnd="23dp"
+                        android:gravity="center"
+                        android:background="@drawable/bg_pill"
+                        android:text="@string/rota_change_photo"
+                        android:textColor="@color/rota_navy"
+                        android:textSize="14sp"
+                        android:clickable="true"
+                        android:focusable="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionMyItems"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="11dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/bg_card"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:elevation="2dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_rota_clipboard"
+                    android:tint="@color/rota_gray"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/actionMyItemsLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:text="@string/TextMyItems"
+                    android:textColor="@color/rota_navy"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_rota_chevron_right"
+                    android:tint="@color/rota_gray"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionLogout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:background="@drawable/bg_card"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:elevation="2dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/ic_rota_logout"
+                    android:tint="@color/rota_gray"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/actionLogoutLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingStart="20dp"
+                    android:text="@string/rota_logout"
+                    android:textColor="@color/rota_navy"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_rota_chevron_right"
+                    android:tint="@color/rota_gray"
+                    android:contentDescription="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navRoot"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:orientation="horizontal"
+        android:background="@color/rota_white"
+        android:elevation="4dp">
+
+        <FrameLayout
+            android:id="@+id/navExplore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/navIconExplore"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rota_search"
+                android:contentDescription="@string/rota_nav_explore"
+                android:tint="@color/rota_gray" />
+
+            <View
+                android:id="@+id/navLineExplore"
+                android:layout_width="29dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_pill_on"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navPublish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/navIconPublish"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rota_plus_circle"
+                android:contentDescription="@string/rota_nav_publish"
+                android:tint="@color/rota_gray" />
+
+            <View
+                android:id="@+id/navLinePublish"
+                android:layout_width="29dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_pill_on"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navMessages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/navIconMessages"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rota_chat"
+                android:contentDescription="@string/rota_nav_messages"
+                android:tint="@color/rota_gray" />
+
+            <View
+                android:id="@+id/navLineMessages"
+                android:layout_width="29dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_pill_on"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navRequests"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/navIconRequests"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rota_clipboard"
+                android:contentDescription="@string/rota_nav_requests"
+                android:tint="@color/rota_gray" />
+
+            <View
+                android:id="@+id/navLineRequests"
+                android:layout_width="29dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_pill_on"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/navIconProfile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_rota_person"
+                android:contentDescription="@string/rota_nav_profile"
+                android:tint="@color/rota_green" />
+
+            <View
+                android:id="@+id/navLineProfile"
+                android:layout_width="29dp"
+                android:layout_height="4dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/bg_pill_on"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

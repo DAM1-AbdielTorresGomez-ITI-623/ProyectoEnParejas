@@ -1,0 +1,233 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rota_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/actionBack"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_rota_back" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="12dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="285dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/photo_bicycle" />
+            <LinearLayout
+                android:id="@+id/imageDots"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <View
+                    android:id="@+id/imageDot0"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:background="@drawable/bg_pill_on"
+                    android:backgroundTint="@color/rota_green" />
+                <View
+                    android:id="@+id/imageDot1"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/bg_pill_on"
+                    android:backgroundTint="#D1D5DB" />
+                <View
+                    android:id="@+id/imageDot2"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_marginStart="7dp"
+                    android:background="@drawable/bg_pill_on"
+                    android:backgroundTint="#D1D5DB" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="24sp"
+                android:textColor="@color/rota_navy"
+                android:textStyle="bold"
+                tools:text="Bicicleta en buen estado" />
+            <TextView
+                android:id="@+id/detailStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="5dp"
+                android:background="@drawable/bg_pale_green"
+                android:textColor="@color/rota_dark_green"
+                android:textSize="14sp"
+                tools:text="Disponible" />
+            <TextView
+                android:id="@+id/detailLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_rota_pin"
+                android:drawablePadding="8dp"
+                android:textColor="@color/rota_gray"
+                android:textSize="14sp"
+                tools:text="Barranca, Puntarenas" />
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/rota_gray"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                tools:text="Bicicleta todo terreno, funciona muy bien. Solo detalles de uso normales. Ideal para paseos, ejercicio o transporte." />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="5dp"
+                android:elevation="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/ic_rota_box" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/TextCategory"
+                        android:textColor="@color/rota_gray"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/detailCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/rota_navy"
+                        android:gravity="end"
+                        tools:text="Deportes" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/ic_rota_edit" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/TextStatus"
+                        android:textColor="@color/rota_gray"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/detailCondition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/rota_navy"
+                        android:gravity="end"
+                        tools:text="Buen estado" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/bg_divider" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:src="@drawable/ic_rota_person" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:text="@string/TextPublishedBy"
+                        android:textColor="@color/rota_gray"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/detailOwner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/rota_navy"
+                        android:gravity="end"
+                        tools:text="Ana" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/actionRequestItem"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_primary"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true">
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@drawable/ic_rota_send"
+            android:tint="@color/rota_white"
+            android:contentDescription="@null"
+            android:clickable="false"
+            android:focusable="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/TextRequestItem"
+            android:textColor="@color/rota_white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+    </LinearLayout>
+</LinearLayout>

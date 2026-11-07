@@ -146,4 +146,38 @@
     <string name="TextDonorRoute">Ruta del donante</string>
     <string name="TextOpenGoogleMaps">Abrir en Google Maps</string>
     <string name="TextPositionSimulation">Ubicación simulada</string>
+
+
+    <string name="rota_available_plural">Disponibles</string>
+    <string name="rota_reserved_plural">Reservadas</string>
+    <string name="rota_change_photo">Cambiar foto</string>
+    <string name="rota_logout">Cerrar sesión</string>
+    <string name="rota_publish_item">Publicar artículo</string>
+    <string name="rota_category_hint">Selecciona una categoría</string>
+    <string name="rota_condition_hint">Selecciona el estado</string>
+    <string name="rota_description_hint">Describe tu artículo, incluye detalles de uso, marca, tamaño, etc.</string>
+    <string name="rota_area">Zona general</string>
+    <string name="rota_area_hint">Selecciona una zona</string>
+    <string name="TextItemTitle">Título del artículo</string>
+    <string name="rota_title_hint">Ej. Bicicleta en buen estado</string>
+    <string name="rota_nav_explore">Explorar</string>
+    <string name="rota_nav_publish">Publicar</string>
+    <string name="rota_nav_messages">Mensajes</string>
+    <string name="rota_nav_requests">Solicitudes</string>
+    <string name="rota_nav_profile">Perfil</string>
+    <string name="TextRemovePhoto">Eliminar foto</string>
+    <string name="rota_reserved_item">Artículo reservado.</string>
+    <string name="rota_invalid_title">Ingresá un título.</string>
+    <string name="rota_invalid_description">Ingresá una descripción.</string>
+    <string name="rota_invalid_agreement">Aceptá el acuerdo de entrega.</string>
+    <string name="rota_add_photo">Agregá una fotografía.</string>
+    <string name="rota_description_limit">Máximo 500 caracteres.</string>
+    <string name="rota_photos_counter">%1$d/3</string>
+    <string name="TextNotAvailable">Función no disponible.</string>
+    <string name="TextPhotoLimitReached">Solo podés agregar hasta 3 fotografías.</string>
+    <string name="TextCannotRequestOwnItem">No podés solicitar tu propio artículo.</string>
+    <string name="TextRequestAlreadySent">Ya enviaste una solicitud por este artículo.</string>
+    <string name="TextItemUnavailable">Este artículo ya no está disponible.</string>
+    <string name="TextCompleteRequiredFields">Completá los campos obligatorios.</string>
+
 </resources>

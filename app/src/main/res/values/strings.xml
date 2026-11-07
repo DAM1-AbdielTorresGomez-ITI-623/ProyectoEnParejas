@@ -180,4 +180,27 @@
     <string name="TextItemUnavailable">Este artículo ya no está disponible.</string>
     <string name="TextCompleteRequiredFields">Completá los campos obligatorios.</string>
 
+    <string name="rota_requests_subtitle">Seguí el progreso de cada donación.</string>
+    <string name="rota_search_conversation">Buscar conversación</string>
+    <string name="rota_received">Recibidas</string>
+    <string name="rota_sent">Enviadas</string>
+    <string name="rota_pending">Pendientes</string>
+    <string name="rota_accepted">Aceptadas</string>
+    <string name="rota_preview_title">Previsualización del receptor</string>
+    <string name="rota_preview_subtitle">Visualizá la ubicación del receptor y la distancia aproximada.</string>
+    <string name="rota_route_title">Ruta al punto de entrega</string>
+    <string name="rota_route_subtitle">Sigue la ruta para recoger el artículo donado en el punto de entrega.</string>
+    <string name="rota_reject_question">¿Rechazar solicitud?</string>
+    <string name="rota_reject_message">La solicitud será rechazada.</string>
+    <string name="rota_view_point">Ver punto</string>
+    <string name="TextAgreedPoint">Punto de entrega acordado</string>
+    <string name="rota_cancel_question">¿Cancelar solicitud?</string>
+    <string name="rota_cancel_message">Se retirará tu solicitud.</string>
+    <string name="rota_cancel_confirm">Sí, cancelar</string>
+    <string name="TextAcceptRequestQuestion">¿Aceptar solicitud?</string>
+    <string name="TextAcceptRequestDescription">Se aceptará esta solicitud.</string>
+    <string name="TextRequestCancelled">Solicitud cancelada</string>
+    <string name="TextMessageRequired">Escribí un mensaje antes de enviarlo.</string>
+    <string name="TextMeetingPointUpdated">Punto de entrega actualizado.</string>
+    <string name="TextDeliveryConfirmed">Entrega confirmada correctamente.</string>
 </resources>

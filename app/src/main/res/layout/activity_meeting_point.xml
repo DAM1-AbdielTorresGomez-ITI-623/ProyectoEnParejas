@@ -1,0 +1,240 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rota_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:paddingBottom="18dp">
+
+            <ImageView
+                android:id="@+id/actionBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="start|center_vertical"
+                android:padding="3dp"
+                android:src="@drawable/ic_rota_back"
+                android:tint="@color/rota_navy"
+                android:contentDescription="@string/TextBack"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/headerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TextMeetingPoint"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/rota_navy"
+                    android:gravity="center"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/headerSubtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/TextMeetingPointDescription"
+                    android:textColor="@color/rota_gray"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/bg_field">
+
+            <TextView
+                android:id="@+id/pointAreaSelect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="45dp"
+                android:paddingEnd="42dp"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="@color/rota_gray"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:clickable="true"
+                android:focusable="true"
+                tools:text="Barranca, Puntarenas" />
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_rota_pin"
+                android:tint="@color/rota_gray"
+                android:contentDescription="@null"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_rota_chevron_down"
+                android:tint="@color/rota_gray"
+                android:contentDescription="@null"
+                android:clickable="false"
+                android:focusable="false" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map_meeting"
+        android:contentDescription="@null" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="238dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_bottom_sheet"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="28dp">
+
+        <View
+            android:layout_width="34dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_pill_on"
+            android:backgroundTint="#C8CBD2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="105dp"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_photo_slot"
+                android:src="@drawable/photo_gazebo"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pointTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TextMeetingLocation"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/rota_navy" />
+
+                <TextView
+                    android:id="@+id/pointName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/rota_navy"
+                    android:textSize="14sp"
+                    tools:text="Parque Central de Barranca" />
+
+                <TextView
+                    android:id="@+id/pointDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/rota_gray"
+                    android:textSize="13sp"
+                    tools:text="Frente al quiosco principal." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/ic_rota_pin"
+                        android:tint="@color/rota_gray"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/pointArea"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="7dp"
+                        android:textColor="@color/rota_gray"
+                        android:textSize="13sp"
+                        tools:text="Barranca, Puntarenas" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/actionConfirmMeetingPoint"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="@string/TextConfirmLocation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/rota_white"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
